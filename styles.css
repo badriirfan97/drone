@@ -1,0 +1,132 @@
+    body {
+        background-color#4947a147;
+    }
+    
+    h1 {
+        color: rgb(152, 152, 204);
+    }
+    
+    p {
+        color: rgb(179, 49, 49);
+        text-align: center;
+    }
+    
+    form {
+        background-color: #837d78;
+    }
+    
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 50%;
+        text-align: center;
+    }
+    
+    td,
+    th {
+        border: 1px solid #963131;
+        text-align: left;
+        padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #942424;
+    }
+    
+    .button {
+        display: inline-block;
+        border-radius: 4px;
+        background-color: #a1605b;
+        border: none;
+        color: #472b2b;
+        text-align: center;
+        font-size: 12px;
+        padding: 10px;
+        width: 30%;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+    }
+    
+    .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+    
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    
+    .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+    
+    .button:hover span {
+        padding-right: 25px;
+    }
+    
+    .button:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+    
+    input[type=text],
+    select,
+    textarea {
+        width: 30%;
+        padding: 12px;
+        border: 1px solid rgb(141, 133, 133);
+        border-radius: 4px;
+        resize: vertical;
+    }
+    
+    input[type=password],
+    select,
+    textarea {
+        width: 30%;
+        padding: 12px;
+        border: 1px solid rgb(190, 55, 55);
+        border-radius: 4px;
+        resize: vertical;
+    }
+    
+    form.example input[type=text] {
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid rgb(22, 20, 20);
+        float: left;
+        width: 80%;
+        background: #9c5656;
+    }
+    
+    form.example button {
+        float: left;
+        width: 20%;
+        padding: 10px;
+        background: #475e72;
+        color: rgb(92, 46, 46);
+        font-size: 17px;
+        border: 1px solid rgb(168, 155, 155);
+        border-left: none;
+        cursor: pointer;
+    }
+    
+    form.example button:hover {
+        background: #184b74;
+    }
+    
+    form.example::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
